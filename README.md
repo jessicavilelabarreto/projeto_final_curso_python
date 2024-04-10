@@ -3,7 +3,7 @@ Este projeto tem como objetivo utilizar os conceitos aprendidos em aula e consol
 Nele contém um exemplo de código Python que realiza a coleta, transformação e armazenamento de dados de diferentes fontes usando, principalmnte, a biblioteca Pandas e a API do BrasilAPI.
 O código foi desenvolvido para criar um pipeline de dados que inclui a extração de dados de __________, informações de _________ e __________.
 
-### Pré-requisitos 📋
+## 📋 Pré-requisitos
 
 Nesta Etapa do projeto alguns itens já deverão estar finalizados , sendo eles: 
 Escolha de uma API da lista disponível; 
@@ -36,7 +36,11 @@ Termine com um exemplo de como obter dados do sistema ou como usá-los para uma 
 ### ⚙️ Executando os testes
 Explicar como executar os testes automatizados para este sistema.
 
-## 🔩 Analise os testes de ponta a ponta
+## 🔩 Analise dos testes de ponta a ponta
+
+```
+Dar exemplos
+```
 
 ## 🛠️ Construído com
 Mencione as ferramentas que você usou para criar seu projeto
