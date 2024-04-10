@@ -36,33 +36,33 @@ Termine com um exemplo de como obter dados do sistema ou como usá-los para uma 
 ### ⚙️ Executando os testes
 Explicar como executar os testes automatizados para este sistema.
 
-### 🔩 Analise os testes de ponta a ponta
+## 🔩 Analise os testes de ponta a ponta
 
-### 🛠️ Construído com
+## 🛠️ Construído com
 Mencione as ferramentas que você usou para criar seu projeto
 
 Dropwizard - O framework web usado
 Maven - Gerente de Dependência
 ROME - Usada para gerar RSS
 
-###🖇️ Colaborando
+## 🖇️ Colaborando
 
 Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
 
-###📌 Versão
+## 📌 Versão
 Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório.
 
-###✒️ Autores
+## ✒️ Autores
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 Um desenvolvedor - Trabalho Inicial - umdesenvolvedor
 Fulano De Tal - Documentação - fulanodetal
 Você também pode ver a lista de todos os colaboradores que participaram deste projeto.
 
-##📄 Licença
+## 📄 Licença
 Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes.
 
-##🎁 Expressões de gratidão
+## 🎁 Expressões de gratidão
 Conte a outras pessoas sobre este projeto 📢;
 Convide alguém da equipe para uma cerveja 🍺;
 Um agradecimento publicamente 🫂;
