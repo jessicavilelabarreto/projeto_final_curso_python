@@ -16,23 +16,25 @@ Validação as tabelas disponibilizadas.
 ```
 Dar exemplos
 ```
-## 🔧 Instalação
+## 🔧 Instalação da venv:
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
+Antes de criar uma venv, você precisa garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
 
 ```
-Dar exemplos
+pip install venv
 ```
 
-E repita:
+Apos a instalação, navegue até a pasta onde será criada a venv:
 
 ```
-Até finalizar
+cd pastaX
 ```
+Execute o comando para criar a venv:
 
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
+```
+python -m venv nome_da_venv
+```
+Substitua "nome_da_venv" pelo nome que você deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
 ## ⚙️ Executando os testes
 Explicar como executar os testes automatizados para este sistema.
