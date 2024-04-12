@@ -36,6 +36,31 @@ python -m venv nome_da_venv
 ```
 Substitua "nome_da_venv" pelo nome que você deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
+# Ativação da venv:
+
+Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
+
+- No Windows:
+```
+nome_da_venv\Scripts\activate
+```
+- No macOS/Linux:
+```
+source nome_da_venv/bin/activate
+```
+Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
+
+# Instalando pacotes e bibliotecas:
+
+Agora que a venv está ativada, vamos instalar pacotes e bibliotecas específicas.
+
+Use o comando "pip install" seguido pelo nome do pacote que deseja instalar. Por exemplo:
+```
+pip install numpy
+pip install pandas
+```
+Isso instalará a biblioteca NumPy e Pandas em sua venv.
+
 ## ⚙️ Executando os testes
 Explicar como executar os testes automatizados para este sistema.
 
