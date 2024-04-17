@@ -9,15 +9,17 @@ O código foi desenvolvido para criar um pipeline de dados que inclui a extraç�
 
 1. Coleta de Dados
  O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
-  . Bancos: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
-  . Participantes do Pix: Retorna informações de todos os participantes do PIX, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
-  . Corretoras: Retorna informações sobre corretoras no Brasil nos arquivos da CVM, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
-  . IBGE: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
+  * Bancos: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
+  * Participantes do Pix: Retorna informações de todos os participantes do PIX, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
+  * Corretoras: Retorna informações sobre corretoras no Brasil nos arquivos da CVM, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
+  * IBGE: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
 
 2. Criação de Alerta
- Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
+   
+ . Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-3. Transformação/tratamento das bases de Dados
+4. Transformação/tratamento das bases de Dados
+ 
  Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
  Base Bancos:
