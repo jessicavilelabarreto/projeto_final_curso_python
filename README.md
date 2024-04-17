@@ -7,42 +7,42 @@ O código foi desenvolvido para criar um pipeline de dados que inclui a extraç�
 
 ## 📋 Descrição das etapas
 
-1. Coleta de Dados
+### 1. Coleta de Dados
  O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
   * **Bancos**: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
   * **Participantes do Pix**: Retorna informações de todos os participantes do PIX, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
   * **Corretoras**: Retorna informações sobre corretoras no Brasil nos arquivos da CVM, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
   * **IBGE**: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
 
-2. Criação de Alerta
+### 2. Criação de Alerta
    
--Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
+* Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-4. Transformação/tratamento das bases de Dados
+### 3. Transformação/tratamento das bases de Dados
  
  Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
- Base Bancos:
+#### Base Bancos:
  
-  -Ajuste dos nomes das colunas e linhas.
+  * Ajuste dos nomes das colunas e linhas.
   
-  -Ajuste de missing.
+  * Ajuste de missing.
 
- Base Participantes do Pix:
+#### Base Participantes do Pix:
  
-   -Ajuste os nomes das colunas e linhas.
+ * Ajuste os nomes das colunas e linhas.
 
- Base Corretoras:
+#### Base Corretoras:
  
-  -Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.
+  * Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.
   
-  -Alteração da coluna type para tipo.
+  * Alteração da coluna type para tipo.
   
-  -Formatação de campo data_patrimonio_liquido para string.
+  * Formatação de campo data_patrimonio_liquido para string.
 
- Base IBGE:
+ #### Base IBGE:
  
-  -Seleção de dados da Região Sudeste.
+  * Seleção de dados da Região Sudeste.
 
 ## 🔧 Instalação da venv:
 
@@ -63,7 +63,7 @@ python -m venv nome_da_venv
 ```
 Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
-# Ativação da venv:
+### Ativação da venv:
 
 Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
 
@@ -77,7 +77,7 @@ source nome_da_venv/bin/activate
 ```
 Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
 
-# Instalando pacotes e bibliotecas:
+### Instalando pacotes e bibliotecas:
 
 Agora que a venv está ativada, vamos instalar pacotes e bibliotecas específicas.
 
@@ -112,9 +112,9 @@ Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de co
 Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório.
 
 ## ✒️ Autores
-https://github.com/jessicavilelabarreto
-https://github.com/Daiane-Siqueira
-https://github.com/cesarmello
+- https://github.com/jessicavilelabarreto
+- https://github.com/Daiane-Siqueira
+- https://github.com/cesarmello
 
 * **Um desenvolvedor** - *Trabalho Inicial* - 
 * **Fulano De Tal** - *Documentação* - [fulanodetal]
