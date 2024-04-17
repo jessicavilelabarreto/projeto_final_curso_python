@@ -34,34 +34,34 @@ Um exemplo de uso do pipeline é sua aplicação na análise de transações fin
 
 ># Descrição das etapas 📋
 
-### 1. Criação de Alerta ⚠️
+#### 1. Criação de Alerta ⚠️
    
 * Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-### 2. Transformação/tratamento das bases de Dados
+#### 2. Transformação/tratamento das bases de Dados
  
 Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
-#### Base Bancos:
+##### Base Bancos:
  
   * Ajuste dos nomes das colunas e linhas.
   * Ajuste de missing.
 
-#### Base Participantes do Pix:
+##### Base Participantes do Pix:
  
  * Ajuste os nomes das colunas e linhas.
 
-#### Base Corretoras:
+##### Base Corretoras:
  
   * Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.  
   * Alteração da coluna type para tipo.  
   * Formatação de campo data_patrimonio_liquido para string.
 
- #### Base IBGE:
+##### Base IBGE:
  
   * Seleção de dados da Região Sudeste.
 
-### 3. Instalação da venv 🔧
+#### 3. Instalação da venv 🔧
 
 Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
 ```
@@ -77,7 +77,7 @@ python -m venv nome_da_venv
 ```
 Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
-### 3.1. Ativação da venv:
+##### 3.1. Ativação da venv:
 
 Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
 
@@ -91,7 +91,7 @@ source nome_da_venv/bin/activate
 ```
 Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
 
-### 3.2. Instalando pacotes e bibliotecas:
+#### 3.2. Instalando pacotes e bibliotecas:
 
 Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
 
@@ -105,12 +105,6 @@ Isso instalará a biblioteca NumPy e Pandas em sua venv.
 >## Executando os testes ⚙️
 Explicar como executar os testes automatizados para este sistema.
 
->## Análise dos testes de ponta a ponta 🔩
-
-```
-Dar exemplos
-```
-
 >## Construído com 🛠️
 
 Microsot Visual Studio Code | 1.88.1
@@ -118,19 +112,12 @@ Microsot Visual Studio Code | 1.88.1
 Python | 3.12
 Jupyter | v2024.3.1
 
-># Instruções de Uso
+># Instruções de Uso ✍️
 Para utilizar o pipeline, siga as seguintes instruções:
 
 1. Clone o repositório para o seu ambiente local.
 2. Instale as dependências necessárias listadas no arquivo `requirements.txt`.
 3. Execute o script principal para iniciar o pipeline de dados.
-
->## Colaborando 🖇️
-
-Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
->## Versão 📌
-Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório.
 
 >## Autores ✒️
 
@@ -140,8 +127,6 @@ Jéssica Barreto | https://github.com/jessicavilelabarreto
 Daiane Siqueira | https://github.com/Daiane-Siqueira
 César Mello | https://github.com/cesarmello
 
->## Licença 📄
-Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes.
 
 >## Expressões de gratidão 🎁
 * Conte a outras pessoas sobre este projeto 📢;
