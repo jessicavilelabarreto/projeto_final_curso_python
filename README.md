@@ -107,9 +107,9 @@ Explicar como executar os testes automatizados para este sistema.
 
 >## Construído com 🛠️
 
-Microsot Visual Studio Code | 1.88.1
-:--------|:----------:
 Python | 3.12
+:--------|:----------:
+Microsot Visual Studio Code | 1.88.1
 Jupyter | v2024.3.1
 
 ># Instruções de Uso ✍️
