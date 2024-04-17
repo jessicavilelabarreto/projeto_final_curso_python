@@ -1,24 +1,40 @@
-# Projeto Final/Coderhouse - Pipeline de Dados com Python
-Este projeto tem como objetivo utilizar os conceitos aprendidos em aula e consolidá-los através da Construção de um pipeline de dados, que consiste em várias etapas: extração, tratamentos, alertas, deploy e documentação.
-O objetivo geral do projeto é permitir que os dados brutos sejam coletados, processados, analisados e disponibilizados para uso em diferentes áreas de negócios.
+![header](https://github.com/jessicavilelabarreto/projeto_final_curso_python/assets/157028362/ddc780d8-97db-4720-87a8-316d1123a874)
+## 📎 Pipeline de dados
 
-Nele contém um exemplo de código Python que realiza a coleta, transformação e armazenamento de dados de diferentes fontes usando, principalmnte, a biblioteca Pandas e a API do BrasilAPI.
-O código foi desenvolvido para criar um pipeline de dados que inclui a extração de dados de Bancos, informações de Participantes do Pix, CorretorasCVM e IBGE.
+Este projeto tem como objetivo utilizar os conceitos aprendidos em aula e consolidá-los por meio da construção de um pipeline de dados, que consiste em várias etapas: extração, tratamentos, alertas, deploy e documentação.
+
+## 🎯 Objetivo Geral
+O objetivo principal do projeto é permitir a coleta, processamento, análise e disponibilização de dados brutos para uso em diversas áreas de negócios.
+
+## 📝 Funcionalidades
+
+O pipeline implementa as seguintes funcionalidades:
+
+📍**Coleta de Dados**: Utiliza a biblioteca Pandas e a API do BrasilAPI para coletar dados de diferentes fontes.
+
+📍**Transformação de Dados**: Realiza tratamentos e manipulações nos dados coletados para garantir sua qualidade e relevância.
+
+📍**Armazenamento de Dados**: Os dados processados são armazenados de forma eficiente para posterior análise e uso.
+
+## Fontes de Dados
+
+ O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
+
+**Bancos**: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
+
+**Participantes do Pix**: Informações sobre empresas e instituições participantes do Pix, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
+
+**Corretoras CVM**: Dados relacionados às corretoras brasileiras registradas na Comissão de Valores Mobiliários, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
+
+**IBGE**: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
 
 ## 📋 Descrição das etapas
 
-### 1. Coleta de Dados
- O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
-  * **Bancos**: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
-  * **Participantes do Pix**: Retorna informações de todos os participantes do PIX, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
-  * **Corretoras**: Retorna informações sobre corretoras no Brasil nos arquivos da CVM, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
-  * **IBGE**: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
-
-### 2. Criação de Alerta
+### 1. Criação de Alerta
    
 * Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-### 3. Transformação/tratamento das bases de Dados
+### 2. Transformação/tratamento das bases de Dados
  
  Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
@@ -100,7 +116,7 @@ Dar exemplos
 ## 🛠️ Construído com
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard] - O framework web usado
+* Microsot Visual Studio Code - 1.881 O framework web usado
 * [Maven] - Gerente de Dependência
 * [ROME] - Usada para gerar RSS
 
