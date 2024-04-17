@@ -112,11 +112,18 @@ Dar exemplos
 ```
 
 >## Construído com 🛠️
-Mencione as ferramentas que você usou para criar seu projeto
 
-* Microsot Visual Studio Code - 1.881 O framework web usado
-* [Maven] - Gerente de Dependência
-* [ROME] - Usada para gerar RSS
+Microsot Visual Studio Code | 1.88.1
+:--------|:----------:
+Python | 3.12
+Jupyter | v2024.3.1
+
+># Instruções de Uso
+Para utilizar o pipeline, siga as seguintes instruções:
+
+1. Clone o repositório para o seu ambiente local.
+2. Instale as dependências necessárias listadas no arquivo `requirements.txt`.
+3. Execute o script principal para iniciar o pipeline de dados.
 
 >## Colaborando 🖇️
 
@@ -126,12 +133,12 @@ Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de co
 Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório.
 
 >## Autores ✒️
-- https://github.com/jessicavilelabarreto
-- https://github.com/Daiane-Siqueira
-- https://github.com/cesarmello
 
-* **Um desenvolvedor** - *Trabalho Inicial* - 
-* **Fulano De Tal** - *Documentação* - [fulanodetal]
+Nome | GitHub
+--------|----------
+Jéssica Barreto | https://github.com/jessicavilelabarreto
+Daiane Siqueira | https://github.com/Daiane-Siqueira
+César Mello | https://github.com/cesarmello
 
 >## Licença 📄
 Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes.
