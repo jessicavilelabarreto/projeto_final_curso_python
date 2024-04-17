@@ -9,33 +9,34 @@ O código foi desenvolvido para criar um pipeline de dados que inclui a extraç�
 
 1. Coleta de Dados
 O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
-  * Bancos: dados sobre ispb, nome da instituição bancária, code e nome completo.
-  * Participantes do Pix: dados sobre ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
-  * Corretoras: Informações sobre corretoras no Brasil, incluindo cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
+  * Bancos: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
+  * Participantes do Pix: Retorna informações de todos os participantes do PIX, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
+  * Corretoras: Retorna informações sobre corretoras no Brasil nos arquivos da CVM, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
+  * IBGE: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
 
 2. Criação de Alerta
 Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-4. Transformação de Dados
-Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. As etapas de transformação incluíram:
-
-Tratamentos base Bancos:
+3. Transformação/tratamento das bases de Dados
+Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
+ Base Bancos:
   * Ajuste dos nomes das colunas e linhas.
-  * Ajuste de missing
+  * Ajuste de missing.
 
-Tratamentos base Participantes do Pix:
+ Base Participantes do Pix:
   * Ajuste os nomes das colunas e linhas.
 
-```Tratamentos base Corretoras:
-  * Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente
-  * Alteração da coluna type para tipo
-  * Formatação de campo data_patrimonio_liquido para string
-```
-Dar exemplos
-```
+ Base Corretoras:
+  * Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.
+  * Alteração da coluna type para tipo.
+  * Formatação de campo data_patrimonio_liquido para string.
+
+ Base IBGE:
+  * Seleção de dados da Região Sudeste.
+
 ## 🔧 Instalação da venv:
 
-Antes de criar uma venv, você precisa garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
+Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
 
 ```
 pip install venv
@@ -50,7 +51,7 @@ Execute o comando para criar a venv:
 ```
 python -m venv nome_da_venv
 ```
-Substitua "nome_da_venv" pelo nome que você deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
+Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
 # Ativação da venv:
 
