@@ -19,6 +19,7 @@ O código foi desenvolvido para criar um pipeline de dados que inclui a extraç�
 
 3. Transformação/tratamento das bases de Dados
  Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
+
  Base Bancos:
   * Ajuste dos nomes das colunas e linhas.
   * Ajuste de missing.
@@ -102,15 +103,12 @@ Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de co
 Nós usamos SemVer para controle de versão. Para as versões disponíveis, observe as tags neste repositório.
 
 ## ✒️ Autores
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - 
-* **Fulano De Tal** - *Documentação* - [fulanodetal]
-
-Você também pode ver a lista de todos os colaboradores que participaram deste projeto.
 https://github.com/jessicavilelabarreto
 https://github.com/Daiane-Siqueira
 https://github.com/cesarmello
+
+* **Um desenvolvedor** - *Trabalho Inicial* - 
+* **Fulano De Tal** - *Documentação* - [fulanodetal]
 
 ## 📄 Licença
 Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes.
