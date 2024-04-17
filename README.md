@@ -24,19 +24,25 @@ O código foi desenvolvido para criar um pipeline de dados que inclui a extraç�
 
  Base Bancos:
  
--Ajuste dos nomes das colunas e linhas.
--Ajuste de missing.
+  -Ajuste dos nomes das colunas e linhas.
+  
+  -Ajuste de missing.
 
  Base Participantes do Pix:
- -Ajuste os nomes das colunas e linhas.
+ 
+   -Ajuste os nomes das colunas e linhas.
 
  Base Corretoras:
--Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.
--Alteração da coluna type para tipo.
--Formatação de campo data_patrimonio_liquido para string.
+ 
+  -Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.
+  
+  -Alteração da coluna type para tipo.
+  
+  -Formatação de campo data_patrimonio_liquido para string.
 
  Base IBGE:
--Seleção de dados da Região Sudeste.
+ 
+  -Seleção de dados da Região Sudeste.
 
 ## 🔧 Instalação da venv:
 
