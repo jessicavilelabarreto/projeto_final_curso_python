@@ -55,8 +55,9 @@ Cada conjunto de dados foi submetido a um processo de limpeza e transformação 
 ##### Base Corretoras:
  ✔️ Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.  
  ✔️ Alteração da coluna type para tipo.  
- ✔️ Formatação de campo data_patrimonio_liquido para string.
-
+ ✔️ Formatação de campo data_patrimonio_liquido para string.  
+ ✔️ Identificação de duplicidades.  
+ 
 ##### Base IBGE:
  
  ✔️ Seleção de dados da Região Sudeste.
