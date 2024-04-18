@@ -1,11 +1,16 @@
 ![header](https://github.com/jessicavilelabarreto/projeto_final_curso_python/assets/157028362/ddc780d8-97db-4720-87a8-316d1123a874)
 
-># Pipeline de dados 🧑‍🚒
+># Introdução 📎
+Este repositório foi criado para a entrega do projeto final do curso de Python da Coderhouse.
 
-Este projeto tem como objetivo utilizar os conceitos aprendidos em aula e consolidá-los por meio da construção de um pipeline de dados, que consiste em várias etapas: extração, tratamentos, alertas, deploy e documentação.
+O objetivo deste projeto é aplicar os conceitos aprendidos em aula e consolidá-los por meio da construção de um pipeline de dados, que engloba as seguintes etapas: extração, tratamento, alertas, deploy e documentação.
+
+Os dados foram coletados de diferentes fontes, utilizando APIs do BrasilAPI. O código desenvolvido realiza a extração de dados de bancos, participantes do Pix, Corretoras CVM e IBGE.
+
+Após a coleta, os dados são transformados e armazenados em um banco de dados SQLite para facilitar o acesso em etapas posteriores da análise.
 
 ># Objetivo Geral 🎯
-O objetivo principal do projeto é permitir a coleta, processamento, análise e disponibilização de dados brutos para uso em diversas áreas de negócios.
+O objetivo principal do projeto é permitir a coleta, processamento, análise e disponibilização de dados tratados para uso em diversas áreas de negócios.
 
 ># Funcionalidades 📝
 
@@ -21,13 +26,13 @@ O pipeline implementa as seguintes funcionalidades:
 
  O código utiliza a biblioteca requests para fazer solicitações à API do BrasilAPI, em seguida foram escolhidas 4 tabelas contendo seus respectivos conjuntos de dados:
 
-**Bancos**: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
+🔻**Bancos**: Retorna informações de todos os bancos do Brasil, contendo os dados: ispb, nome da instituição bancária, code e nome completo.
 
-**Participantes do Pix**: Informações sobre empresas e instituições participantes do Pix, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
+🔻**Participantes do Pix**: Informações sobre empresas e instituições participantes do Pix, contendo os dados: ispb, nome da instituição, nome abreviado, modalidade_participação, tipo_participação e inicio_operação.
 
-**Corretoras CVM**: Dados relacionados às corretoras brasileiras registradas na Comissão de Valores Mobiliários, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
+🔻**Corretoras CVM**: Dados relacionados às corretoras brasileiras registradas na Comissão de Valores Mobiliários, contendo os dados: cnpj, tipo, nome social, nome comercial, status, e-mail, telefone, cep, pais, uf, município, bairro, complemento, logradouro, data patriminio líquido, valor patrimonio liquido, etc.
 
-**IBGE**: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
+🔻**IBGE**: Retorna informações de um estado a partir da sigla ou código, contendo os dados: id, sigla, nome e região.
 
 ># Exemplo de Uso 📊
 Um exemplo de uso do pipeline é sua aplicação na análise de transações financeiras, onde os dados são coletados, tratados e armazenados para identificar padrões e tendências.
@@ -56,7 +61,11 @@ Cada conjunto de dados foi submetido a um processo de limpeza e transformação 
  
  ✔️ Seleção de dados da Região Sudeste.
 
-### 3. Instalação da venv 🪛
+### 3. Armazenamento de Dados 💾
+
+✔️ Os conjuntos de dados transformados foram armazenados em um banco de dados SQLite chamado `coderhouse.db` usando a biblioteca sqlalchemy. Isso permite que os dados sejam facilmente acessados e consultados em etapas posteriores da análise.
+
+### Instalação da venv 🪛
 🔸 Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
 ```
 pip install venv
@@ -71,7 +80,7 @@ python -m venv nome_da_venv
 ```
 🔸 Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
-##### **3.1. Ativação da venv:**
+##### **1. Ativação da venv:**
 
 🔹Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
 
@@ -85,7 +94,7 @@ source nome_da_venv/bin/activate
 ```
 🔹Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
 
-#### **3.2. Instalando pacotes e bibliotecas:**
+#### **2. Instalando pacotes e bibliotecas:**
 
 🔹Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
 
@@ -115,7 +124,9 @@ Jupyter | v2024.3.1
 Para utilizar o pipeline, siga as seguintes instruções:
 
 ▫️ Clone o repositório para o seu ambiente local.
+
 ▫️ Instale as dependências necessárias listadas no arquivo `requirements.txt`.
+
 ▫️ Execute o script principal para iniciar o pipeline de dados.
 
 >## Autores ✒️
