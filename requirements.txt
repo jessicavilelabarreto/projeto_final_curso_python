@@ -26,7 +26,8 @@ python-dateutil==2.9.0.post0
 pywin32==306
 pyzmq==25.1.2
 requests==2.31.0
-six==1.16.0  
+six==1.16.0
+sqlalchemy == 2.0.29
 stack-data==0.6.3
 tornado==6.4
 traitlets==5.14.2
