@@ -96,12 +96,14 @@ pip install pandas
 ```
 🔹Isso instalará a biblioteca NumPy e Pandas em sua venv.
 
->## Executando o código ⚙️
+>## Como executar o código ⚙️
 Para executar o código e criar o banco de dados, siga os passos abaixo:
-. Certifique-se de que o Python e as bibliotecas necessárias estejam instaladas.
-. Execute o script Python. O banco de dados _______' será criado e conterá as tabelas 'feriados_nacionais', 'corretoras_ativas' e 'taxas' com os dados coletados e transformados.
 
-Este código é um exemplo de pipeline de dados básico e pode ser estendido para incluir mais fontes de dados e transformações específicas ao seu projeto. Certifique-se de entender os dados coletados e adaptar o código conforme necessma.
+🔺Certifique-se de que o Python e as bibliotecas necessárias estejam instaladas.
+
+🔺Execute o script Python. O banco de dados `coderhouse.db` será criado e conterá as tabelas `Bancos`, `ParticipantesPix`, `CorretorasCVM` e `Regioes` com os dados coletados e transformados.
+
+Este código é um exemplo de pipeline de dados básico e pode ser estendido para incluir mais fontes de dados e transformações específicas ao seu projeto. Certifique-se de entender os dados coletados e adaptar o código conforme necessário.
 
 >## Construído com 🛠️
 Python | 3.12
