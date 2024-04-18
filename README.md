@@ -36,30 +36,25 @@ Um exemplo de uso do pipeline é sua aplicação na análise de transações fin
 
 ### 1. Criação de Alerta ⚠️
    
-* Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
+✔️ Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
 ### 2. Transformação/tratamento das bases de Dados 🚧
  
 Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
 ##### Base Bancos:
- 
-  * Ajuste dos nomes das colunas e linhas.
-  * Ajuste de missing.
-
+ ✔️ Ajuste dos nomes das colunas e linhas.  
+ ✔️ Ajuste de missing.  
 ##### Base Participantes do Pix:
- 
- * Ajuste os nomes das colunas e linhas.
-
+ ✔️ Ajuste os nomes das colunas e linhas.
 ##### Base Corretoras:
- 
-  * Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.  
-  * Alteração da coluna type para tipo.  
-  * Formatação de campo data_patrimonio_liquido para string.
+ ✔️ Seleção de colunas desejadas da API Corretoras com Status "EM FUNCIONAMENTO NORMAL" Somente.  
+ ✔️ Alteração da coluna type para tipo.  
+ ✔️ Formatação de campo data_patrimonio_liquido para string.
 
 ##### Base IBGE:
  
-  * Seleção de dados da Região Sudeste.
+ ✔️ Seleção de dados da Região Sudeste.
 
 ### 3. Instalação da venv 🪛
 🔸 Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
@@ -78,23 +73,23 @@ python -m venv nome_da_venv
 
 ##### **3.1. Ativação da venv:**
 
-3.1.1. Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
+🔹Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
 
-- No Windows:
+##### -> No Windows:
 ```
 nome_da_venv\Scripts\activate
 ```
-- No macOS/Linux:
+##### -> No macOS/Linux:
 ```
 source nome_da_venv/bin/activate
 ```
-3.1.2. Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
+🔹Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
 
 #### **3.2. Instalando pacotes e bibliotecas:**
 
-🔹3.2.1. Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
+🔹Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
 
-🔹3.2.2. Use o comando "pip install" seguido pelo nome do pacote que deseja instalar. Por exemplo:
+🔹Use o comando "pip install" seguido pelo nome do pacote que deseja instalar. Por exemplo:
 ```
 pip install numpy
 pip install pandas
