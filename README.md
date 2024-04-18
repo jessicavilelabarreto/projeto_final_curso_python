@@ -96,11 +96,14 @@ pip install pandas
 ```
 🔹Isso instalará a biblioteca NumPy e Pandas em sua venv.
 
->## Executando os testes ⚙️
-Explicar como executar os testes automatizados para este sistema.
+>## Executando o código ⚙️
+Para executar o código e criar o banco de dados, siga os passos abaixo:
+. Certifique-se de que o Python e as bibliotecas necessárias estejam instaladas.
+. Execute o script Python. O banco de dados _______' será criado e conterá as tabelas 'feriados_nacionais', 'corretoras_ativas' e 'taxas' com os dados coletados e transformados.
+
+Este código é um exemplo de pipeline de dados básico e pode ser estendido para incluir mais fontes de dados e transformações específicas ao seu projeto. Certifique-se de entender os dados coletados e adaptar o código conforme necessma.
 
 >## Construído com 🛠️
-
 Python | 3.12
 :--------|:----------:
 Microsot Visual Studio Code | 1.88.1
@@ -110,9 +113,7 @@ Jupyter | v2024.3.1
 Para utilizar o pipeline, siga as seguintes instruções:
 
 ▫️ Clone o repositório para o seu ambiente local.
-
 ▫️ Instale as dependências necessárias listadas no arquivo `requirements.txt`.
-
 ▫️ Execute o script principal para iniciar o pipeline de dados.
 
 >## Autores ✒️
