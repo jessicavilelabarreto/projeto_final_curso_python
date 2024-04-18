@@ -7,7 +7,7 @@ O objetivo deste projeto é aplicar os conceitos aprendidos em aula e consolidá
 
 Os dados foram coletados de diferentes fontes, utilizando APIs do BrasilAPI. O código desenvolvido realiza a extração de dados de bancos, participantes do Pix, Corretoras CVM e IBGE.
 
-Após a coleta, os dados são transformados e armazenados em um banco de dados SQLite para facilitar o acesso em etapas posteriores da análise.
+Após a coleta, os dados foram transformados e armazenados em um banco de dados SQLite para facilitar o acesso em etapas posteriores da análise.
 
 ># Objetivo Geral 🎯
 O objetivo principal do projeto é permitir a coleta, processamento, análise e disponibilização de dados tratados para uso em diversas áreas de negócios.
