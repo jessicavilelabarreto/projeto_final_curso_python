@@ -122,10 +122,3 @@ Nome | GitHub
 Jéssica Barreto | https://github.com/jessicavilelabarreto
 Daiane Siqueira | https://github.com/Daiane-Siqueira
 César Mello | https://github.com/cesarmello
-
-
->## Expressões de gratidão 🎁
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
