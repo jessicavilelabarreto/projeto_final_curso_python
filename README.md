@@ -34,11 +34,11 @@ Um exemplo de uso do pipeline é sua aplicação na análise de transações fin
 
 ># Descrição das etapas 📋
 
-#### 1. Criação de Alerta ⚠️
+### 1. Criação de Alerta ⚠️
    
 * Foi utilizada a função notification.notify() para criar uma função de alerta de falha de carregamento de base de dados.
 
-#### 2. Transformação/tratamento das bases de Dados
+### 2. Transformação/tratamento das bases de Dados 🚧
  
 Cada conjunto de dados foi submetido a um processo de limpeza e transformação para garantir que estejam prontos para análise. Os tratamentos realizados foram:
 
@@ -61,25 +61,24 @@ Cada conjunto de dados foi submetido a um processo de limpeza e transformação 
  
   * Seleção de dados da Região Sudeste.
 
-#### 3. Instalação da venv 🔧
-
-Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
+### 3. Instalação da venv 🪛
+🔸 Antes de criar uma venv, é preciso garantir que a biblioteca `venv` esteja instalada em seu sistema. No terminal do VS Code, digite o seguinte comando:
 ```
 pip install venv
 ```
-Após a instalação, navegue até a pasta onde será criada a venv:
+🔸 Após a instalação, navegue até a pasta onde será criada a venv:
 ```
 cd pastaX
 ```
-Execute o comando para criar a venv:
+🔸 Execute o comando para criar a venv:
 ```
 python -m venv nome_da_venv
 ```
-Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
+🔸 Substitua "nome_da_venv" pelo nome que deseja dar ao seu ambiente virtual. Isso criará uma pasta com o nome fornecido no diretório do seu projeto e configurará uma venv associada a essa pasta.
 
-##### 3.1. Ativação da venv:
+##### **3.1. Ativação da venv:**
 
-Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
+3.1.1. Após a criação da venv, você precisará ativá-la antes de poder usá-la. No terminal do VS Code, digite o seguinte comando:
 
 - No Windows:
 ```
@@ -89,18 +88,18 @@ nome_da_venv\Scripts\activate
 ```
 source nome_da_venv/bin/activate
 ```
-Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
+3.1.2. Saberá que a venv está ativada quando o nome dela aparecer no início da linha de comando no terminal.
 
-#### 3.2. Instalando pacotes e bibliotecas:
+#### **3.2. Instalando pacotes e bibliotecas:**
 
-Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
+🔹3.2.1. Agora que a venv está ativada, instalaremos pacotes e bibliotecas específicas.
 
-Use o comando "pip install" seguido pelo nome do pacote que deseja instalar. Por exemplo:
+🔹3.2.2. Use o comando "pip install" seguido pelo nome do pacote que deseja instalar. Por exemplo:
 ```
 pip install numpy
 pip install pandas
 ```
-Isso instalará a biblioteca NumPy e Pandas em sua venv.
+🔹Isso instalará a biblioteca NumPy e Pandas em sua venv.
 
 >## Executando os testes ⚙️
 Explicar como executar os testes automatizados para este sistema.
@@ -115,9 +114,11 @@ Jupyter | v2024.3.1
 ># Instruções de Uso ✍️
 Para utilizar o pipeline, siga as seguintes instruções:
 
-1. Clone o repositório para o seu ambiente local.
-2. Instale as dependências necessárias listadas no arquivo `requirements.txt`.
-3. Execute o script principal para iniciar o pipeline de dados.
+▫️ Clone o repositório para o seu ambiente local.
+
+▫️ Instale as dependências necessárias listadas no arquivo `requirements.txt`.
+
+▫️ Execute o script principal para iniciar o pipeline de dados.
 
 >## Autores ✒️
 
